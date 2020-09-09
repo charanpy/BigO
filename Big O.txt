@@ -1,0 +1,18 @@
+
+O(1) ->constant no loops
+
+O(n)-> Linear for,while loops
+
+O(n^2)->Quadratic -nested loops
+O(n!)->Factorial-adding loop for every element
+
+Iterating through half a collection i.e O(n/2) is still O(n)
+Two seperate Collection O(a+b)
+Two seperate collection when nested O(a*b)
+
+Simplification of Big O 
+*Remove constants
+*Different terms for input
+       1) + for steps in order
+       2) * for nested steps
+*Drop non Dominants
