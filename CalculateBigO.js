@@ -1,5 +1,5 @@
 ////////////////////////
-// !Ignoring constants//
+// !   Ignoring constants//
 //                    //
 ////////////////////////
 function calculateBigO(items) {
@@ -14,20 +14,20 @@ function calculateBigO(items) {
                         console.log("hi");
             }
 }
-//!drop constants
-//&O(1+n/2+100)
-//&O(n/2 +1) 
-//&O(n+1)
-//^O(n)
+//!      drop constants
+//&    O(1+n/2+100)
+//&   O(n/2 +1) 
+//&  O(n+1)
+//^   O(n)
 
 function doSomething(item) {
             item.map(i => console.log(i)); //O(n)
             item.filter(i => i % 2 == 0)//O(n)
 }
-//&O(2n) =>  O(n)
+//&    O(2n) =>  O(n)
 
 ////////////////////////////////
-// !Different terms for input //
+//!    Different terms for input //
 ////////////////////////////////
 
 function compressBox(boxes, boxes2) {
@@ -40,12 +40,12 @@ function compressBox(boxes, boxes2) {
                         console.log(boxes);
             })
 }
-//^O(a+b)
-//!First for loop depends on size of boxes,second for loop depends on size of boxes2
+//^   O(a+b)
+//!   First for loop depends on size of boxes,second for loop depends on size of boxes2
 
 //example2
 //Logging all pairs of arrayTime
-//&Nested for loop we use * symbol
+//&  Nested for loop we use * symbol
 const chair = [1, 2, 3, 4, 5];
 function pair(array) {
             for (let i = 0; i < array.length; i++) {
@@ -55,9 +55,9 @@ function pair(array) {
             }
 }
 pair(chair);
-//^O(n*n)=>O(n^2)
+//^  O(n*n)=>O(n^2)
 
-//^Nested loop with different input
+//^   Nested loop with different input
 
 function compressBox(boxes, boxes2) {
             boxes.forEach(function (boxes1) {
@@ -67,10 +67,10 @@ function compressBox(boxes, boxes2) {
 
             })
 }
-//&O(a*b)
+//&  O(a*b)
 
 ////////////////////////
-// !Drop Non Dominants//
+//!  Drop Non Dominants//
 ////////////////////////
 function pairSum(nos) {
             nos.forEach((no) => {
@@ -83,7 +83,7 @@ function pairSum(nos) {
                         })
             })
 }
-//&O(n+n^2) =>Drop non dominant term
-//*O(n^2)
+//&  O(n+n^2) =>Drop non dominant term
+//*   O(n^2)
 
-//!O(x^2 + 3x +100 +x/2)=>O(x^2)
+//!     O(x^2 + 3x +100 +x/2)=>O(x^2)
